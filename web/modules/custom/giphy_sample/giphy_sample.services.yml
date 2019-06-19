@@ -1,0 +1,3 @@
+services:
+  giphy_sample.api:
+    class: Drupal\giphy_sample\GiphySampleService

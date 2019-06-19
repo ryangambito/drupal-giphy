@@ -1,0 +1,48 @@
+uuid: 4d677a5c-efc4-438e-9964-5287b9cb8c3c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.giphy.body
+    - field.field.node.giphy.field_giphy_image
+    - field.field.node.giphy.field_giphy_keyword
+    - node.type.giphy
+  module:
+    - giphy_sample
+    - image
+    - text
+    - user
+id: node.giphy.default
+targetEntityType: node
+bundle: giphy
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_giphy_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_giphy_keyword:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: giphy_field
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

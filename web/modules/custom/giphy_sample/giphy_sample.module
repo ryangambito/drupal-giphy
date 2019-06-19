@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Defines Giphy field formatter for the field.
+ */
+ 
+/**
+ * Implements hook_theme().
+ */
+function giphy_sample_theme() {
+  $theme = array();
+
+  $theme['giphy-field-formatter'] = array(
+    'variables' => array(
+      'url' => NULL
+    ),
+	'template' => 'giphy-field-formatter'
+  );
+
+  return $theme;
+}

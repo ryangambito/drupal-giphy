@@ -1,0 +1,7 @@
+name: Giphy Sample
+type: module
+description: Giphy integration module
+package: Custom
+core: 8.x
+dependencies:
+  - field
